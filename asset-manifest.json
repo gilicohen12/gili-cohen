@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.27621849.css",
-    "main.js": "/static/js/main.2a953a77.js",
-    "static/js/787.8cf52469.chunk.js": "/static/js/787.8cf52469.chunk.js",
-    "static/media/IMG_6162.jpg": "/static/media/IMG_6162.ca6633deae7a3b9381ab.jpg",
-    "static/media/IMG_5584.jpg": "/static/media/IMG_5584.d7a17a940f929f684ffa.jpg",
-    "static/media/IMG_5227.jpg": "/static/media/IMG_5227.559f52066911c2004bdf.jpg",
-    "static/media/IMG_5583.jpg": "/static/media/IMG_5583.05a3fc356f1e35ec9bda.jpg",
-    "static/media/IMG_5118.jpg": "/static/media/IMG_5118.95969daabb02399136e0.jpg",
-    "static/media/IMG_5084.jpg": "/static/media/IMG_5084.1f1d8048d4d91e2b3db4.jpg",
-    "static/media/IMG_4946.jpg": "/static/media/IMG_4946.f6a738d63beefa113d52.jpg",
-    "static/media/IMG_5633.jpg": "/static/media/IMG_5633.b7c32b24b3aeb75ddee5.jpg",
-    "static/media/IMG_5652.jpg": "/static/media/IMG_5652.1e083fc14f4f6259b1b7.jpg",
-    "static/media/IMG_5620.jpg": "/static/media/IMG_5620.8b6a8492b5223ecea54f.jpg",
-    "static/media/IMG_5256.jpg": "/static/media/IMG_5256.879a47291aa0080dcdfb.jpg",
-    "static/media/IMG_5066.jpg": "/static/media/IMG_5066.ff973d5b6ea44dd987b1.jpg",
-    "static/media/home_page_photo2.png": "/static/media/home_page_photo2.ec898002e006e13f2eb0.png",
-    "index.html": "/index.html",
-    "main.27621849.css.map": "/static/css/main.27621849.css.map",
-    "main.2a953a77.js.map": "/static/js/main.2a953a77.js.map",
-    "787.8cf52469.chunk.js.map": "/static/js/787.8cf52469.chunk.js.map"
+    "main.css": "/gili-cohen/static/css/main.27621849.css",
+    "main.js": "/gili-cohen/static/js/main.c6314115.js",
+    "static/js/787.8cf52469.chunk.js": "/gili-cohen/static/js/787.8cf52469.chunk.js",
+    "static/media/IMG_6162.jpg": "/gili-cohen/static/media/IMG_6162.ca6633deae7a3b9381ab.jpg",
+    "static/media/IMG_5584.jpg": "/gili-cohen/static/media/IMG_5584.d7a17a940f929f684ffa.jpg",
+    "static/media/IMG_5227.jpg": "/gili-cohen/static/media/IMG_5227.559f52066911c2004bdf.jpg",
+    "static/media/IMG_5583.jpg": "/gili-cohen/static/media/IMG_5583.05a3fc356f1e35ec9bda.jpg",
+    "static/media/IMG_5118.jpg": "/gili-cohen/static/media/IMG_5118.95969daabb02399136e0.jpg",
+    "static/media/IMG_5084.jpg": "/gili-cohen/static/media/IMG_5084.1f1d8048d4d91e2b3db4.jpg",
+    "static/media/IMG_4946.jpg": "/gili-cohen/static/media/IMG_4946.f6a738d63beefa113d52.jpg",
+    "static/media/IMG_5633.jpg": "/gili-cohen/static/media/IMG_5633.b7c32b24b3aeb75ddee5.jpg",
+    "static/media/IMG_5652.jpg": "/gili-cohen/static/media/IMG_5652.1e083fc14f4f6259b1b7.jpg",
+    "static/media/IMG_5620.jpg": "/gili-cohen/static/media/IMG_5620.8b6a8492b5223ecea54f.jpg",
+    "static/media/IMG_5256.jpg": "/gili-cohen/static/media/IMG_5256.879a47291aa0080dcdfb.jpg",
+    "static/media/IMG_5066.jpg": "/gili-cohen/static/media/IMG_5066.ff973d5b6ea44dd987b1.jpg",
+    "static/media/home_page_photo2.png": "/gili-cohen/static/media/home_page_photo2.ec898002e006e13f2eb0.png",
+    "index.html": "/gili-cohen/index.html",
+    "main.27621849.css.map": "/gili-cohen/static/css/main.27621849.css.map",
+    "main.c6314115.js.map": "/gili-cohen/static/js/main.c6314115.js.map",
+    "787.8cf52469.chunk.js.map": "/gili-cohen/static/js/787.8cf52469.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27621849.css",
-    "static/js/main.2a953a77.js"
+    "static/js/main.c6314115.js"
   ]
 }
