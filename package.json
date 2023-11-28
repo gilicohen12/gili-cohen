@@ -1,7 +1,5 @@
 {
-  "homepage": {
-    "homepage": "http://joedoe.github.io/his-app"
-  },
+  "homepage": "http://joedoe.github.io/his-app/",
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
