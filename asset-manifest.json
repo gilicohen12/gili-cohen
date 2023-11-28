@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/his-app/static/css/main.27621849.css",
+    "main.js": "/his-app/static/js/main.b1d860ae.js",
+    "static/js/787.8cf52469.chunk.js": "/his-app/static/js/787.8cf52469.chunk.js",
+    "static/media/IMG_6162.jpg": "/his-app/static/media/IMG_6162.ca6633deae7a3b9381ab.jpg",
+    "static/media/IMG_5584.jpg": "/his-app/static/media/IMG_5584.d7a17a940f929f684ffa.jpg",
+    "static/media/IMG_5227.jpg": "/his-app/static/media/IMG_5227.559f52066911c2004bdf.jpg",
+    "static/media/IMG_5583.jpg": "/his-app/static/media/IMG_5583.05a3fc356f1e35ec9bda.jpg",
+    "static/media/IMG_5118.jpg": "/his-app/static/media/IMG_5118.95969daabb02399136e0.jpg",
+    "static/media/IMG_5084.jpg": "/his-app/static/media/IMG_5084.1f1d8048d4d91e2b3db4.jpg",
+    "static/media/IMG_4946.jpg": "/his-app/static/media/IMG_4946.f6a738d63beefa113d52.jpg",
+    "static/media/IMG_5633.jpg": "/his-app/static/media/IMG_5633.b7c32b24b3aeb75ddee5.jpg",
+    "static/media/IMG_5652.jpg": "/his-app/static/media/IMG_5652.1e083fc14f4f6259b1b7.jpg",
+    "static/media/IMG_5620.jpg": "/his-app/static/media/IMG_5620.8b6a8492b5223ecea54f.jpg",
+    "static/media/IMG_5256.jpg": "/his-app/static/media/IMG_5256.879a47291aa0080dcdfb.jpg",
+    "static/media/IMG_5066.jpg": "/his-app/static/media/IMG_5066.ff973d5b6ea44dd987b1.jpg",
+    "static/media/home_page_photo2.png": "/his-app/static/media/home_page_photo2.ec898002e006e13f2eb0.png",
+    "index.html": "/his-app/index.html",
+    "main.27621849.css.map": "/his-app/static/css/main.27621849.css.map",
+    "main.b1d860ae.js.map": "/his-app/static/js/main.b1d860ae.js.map",
+    "787.8cf52469.chunk.js.map": "/his-app/static/js/787.8cf52469.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27621849.css",
+    "static/js/main.b1d860ae.js"
+  ]
+}
