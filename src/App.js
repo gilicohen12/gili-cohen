@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';  
 import Exploratory from './ExploratoryPieces';
 import Photography from './Photography';
@@ -12,6 +12,7 @@ const App = () => {
     <Router>
       <div>
         <NavBar />
+        <Home />
         <Routes> {/* Wrap your Routes in a Routes component */}
           <Route path="/experience" element={<Experience />} />
           <Route path="/home" element={<Home />} />
