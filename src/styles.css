@@ -169,12 +169,12 @@ nav {
 
 .learn-more {
   color: #000;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 200% */
-text-decoration: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 200% */
+  text-decoration: none;
 }
 
 
@@ -198,4 +198,10 @@ text-decoration: none;
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.pieces {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 30px;
 }

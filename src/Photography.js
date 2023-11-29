@@ -1,8 +1,5 @@
 import React from 'react';
-import PhotoAlbum from './PhotoGrid';
 import './styles.css';
-import IMG_4946 from './Photographs/IMG_4946.jpg'
-import MyGallery from './PhotoGrid';
 import WovenImageList from './PhotoGrid';
 
 // import IMG_5066 from './Photographs/IMG_5066.jpg'
