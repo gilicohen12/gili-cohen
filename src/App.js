@@ -12,7 +12,6 @@ const App = () => {
     <Router>
       <div>
         <NavBar />
-        <Home />
         <Routes> {/* Wrap your Routes in a Routes component */}
           <Route path="/experience" element={<Experience />} />
           <Route path="/home" element={<Home />} />
