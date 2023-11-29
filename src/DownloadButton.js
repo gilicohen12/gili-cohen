@@ -1,29 +1,30 @@
-// // DownloadButton.js
-// import React from 'react';
+import React from 'react';
 
-// const DownloadButton = () => {
-//   const handleDownload = () => {
-//     const pdfPath = '/Resume.pdf'; // Adjust the path to your PDF file
+const DownloadButton = () => {
+  const handleDownload = () => {
+    // Adjust the path to your PDF file
 
-//     // Create a link element
-//     const link = document.createElement('a');
-//     link.href = process.env.PUBLIC_URL + pdfPath;
-//     link.target = '_blank';
-//     link.download = 'Resume.pdf';
+    // Create a link element
+    const pdfPath = '/Resume_Gili_Cohen_2023.pdf';
 
-//     // Dispatch a click event on the link
-//     document.body.appendChild(link);
-//     link.click();
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';
+    link.download = 'Resume-Gili-Cohen-2023.pdf'; // Set the desired file name
 
-//     // Remove the link from the DOM
-//     document.body.removeChild(link);
-//   };
+    // Dispatch a click event on the link
+    document.body.appendChild(link);
+    link.click();
 
-//   return (
-//     <button onClick={handleDownload}>
-//       Download PDF
-//     </button>
-//   );
-// };
+    // Remove the link from the DOM
+    document.body.removeChild(link);
+  };
 
-// export default DownloadButton;
+  return (
+    <button className="download-button" onClick={handleDownload}>
+      Download PDF
+    </button>
+  );
+};
+
+export default DownloadButton;

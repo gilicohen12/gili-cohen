@@ -6,6 +6,7 @@ import Exploratory from './ExploratoryPieces';
 import Photography from './Photography';
 import Home from './Home';
 import Experience from './Experience';
+import Contact from './Contact';
 
 const App = () => {
   return (
@@ -13,11 +14,13 @@ const App = () => {
       <div>
         <NavBar />
         <Routes> {/* Wrap your Routes in a Routes component */}
+          <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/exploratory" element={<Exploratory />} />
           <Route path="/photography" element={<Photography />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+        
       </div>
     </Router>
   );

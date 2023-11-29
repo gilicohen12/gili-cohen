@@ -15,7 +15,7 @@ import react from './react.png'
 const SkillsBar = () => {
     return (
 
-        <div className='section'> 
+        <div> 
         <div className= "small-header">My Skills</div>
         <div className= "skills-box">
             <Tech

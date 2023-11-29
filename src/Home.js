@@ -4,10 +4,9 @@ import './styles.css';
 import home_page_photo2 from './Photographs/home_page_photo2.png';
 import SkillsBar from './SkillsBar';
 import Experience from './Experience';
-
+import Footer from './Footer';
 
 const Home = () => {
-    const myComponentRef = useRef(null);
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -39,6 +38,7 @@ const Home = () => {
 
 
     return (
+      <div>
         <div className= "page"> 
             <div className='intro-spacing'> 
             <div>
@@ -68,6 +68,9 @@ const Home = () => {
                     
                 </div>
             </div>
+            
+        </div>
+        <Footer/>
         </div>
 
 

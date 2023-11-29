@@ -4,6 +4,13 @@
 @import 'tailwindcss/utilities';
 
 body {
+  margin: 0;
+}
+.photo-main {
+  display: block;
+     margin-left: auto;
+}
+.body-text {
   color: var(--gray-600, #4B5563);
   padding: 50px 50px;
   font-family: Inter;
@@ -90,9 +97,12 @@ nav {
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
+.big-section {
+  padding: 72px 0px;
+}
 
 .section {
-  padding: 100px 0px;
+  padding: 15px 0px;
 }
 .small-section {
   padding: 15px 0px;
@@ -119,18 +129,22 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 88.889% */
+  
 }
 
 .job-title {
-  width: 229px;
-  height: 70px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 133.333% */
+  width: 229px;
+height: 70px;
+padding: 10px 0px;
+flex-shrink: 0;
+-ms-transform: translateY(50%);
+transform: translateY(50%);
 }
 
 .job-body {
@@ -141,12 +155,15 @@ nav {
   font-style: normal;
   font-weight: 600;
   line-height: 25px; /* 156.25% */
+  -ms-transform: translateY(20%);
+transform: translateY(20%);
 }
 
 
 .left-column {
   flex-grow: 2;
   padding-right: 10px;
+  
 }
 
 .container {
@@ -183,6 +200,12 @@ nav {
   flex-wrap: wrap;
   padding: 0 4px;
 }
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+}
 .intro-spacing {
   display: flex;
   padding-right: 10px;
@@ -204,4 +227,37 @@ nav {
   display: flex;
   flex-wrap: wrap;
   padding: 70px 30px;
+}
+
+.contact-body {
+  width: 871px;
+  height: 106px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+.contact-info {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  width: 348px;
+  height: 20px;
+  flex-shrink: 0;
+  padding: 7px 0px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0; /* Adjust the background color as needed */
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
 }
