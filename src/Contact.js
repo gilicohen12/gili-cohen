@@ -1,6 +1,6 @@
 // NavBar.js
 import React from 'react';
-import './nav-bar.css';
+import './styles/nav-bar.css';
 import Footer from './Footer';
 
 const Contact = () => {

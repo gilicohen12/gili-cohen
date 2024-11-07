@@ -1,5 +1,5 @@
 import React from 'react';
-import './piece.css';
+import './styles/piece.css';
 
 
 const Piece = () => {

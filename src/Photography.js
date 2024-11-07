@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles.css';
+import './styles/styles.css';
 import WovenImageList from './PhotoGrid';
 import Footer from './Footer';
-import photography_main from './Photographs/photography_main.png'
+import photography_main from './photographs/photography_main.png'
 
 const Photography = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Job from './Job';
-import './styles.css';
+import './styles/styles.css';
 
 const Experience = () => {
     return (

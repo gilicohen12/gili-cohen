@@ -2,13 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import DownloadButton from './DownloadButton';
-import './nav-bar.css';
+import './styles/nav-bar.css';
 
 const NavBar = () => {
   return (
     <nav className= "nav-bar">
       <div className="container"> 
-        <Link to="/gili-cohen/" className="logo">GC</Link>
+        <Link to="/" className="logo">GC</Link>
         <div className="nav-texts">
           <Link to="/exploratory" className="nav-links">Exploratory Pieces</Link>
           <Link to="/photography" className="nav-links">Photography</Link>

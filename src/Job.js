@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // You can create a CSS file for styling
+import './styles/styles.css'; // You can create a CSS file for styling
 
 const Job = ({ title, description, bodyText1, bodyText2}) => {
   return (

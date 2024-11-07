@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css';
-import home_page_photo2 from './Photographs/home_page_photo2.png';
+import './styles/styles.css';
+import home_page_photo2 from './photographs/home_page_photo2.png';
 import SkillsBar from './SkillsBar';
 import Experience from './Experience';
 import Footer from './Footer';

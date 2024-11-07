@@ -1,19 +1,18 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import IMG_4946 from './Photographs/IMG_4946.jpg'
-import IMG_5066 from './Photographs/IMG_5066.jpg'
-import IMG_5084 from './Photographs/IMG_5084.jpg'
-import IMG_5118 from './Photographs/IMG_5118.jpg'
-// import IMG_5162 from './Photographs/IMG_5162.jpg'
-import IMG_5227 from './Photographs/IMG_5227.jpg'
-import IMG_5256 from './Photographs/IMG_5256.jpg'
-import IMG_5583 from './Photographs/IMG_5583.jpg'
-import IMG_5584 from './Photographs/IMG_5584.jpg'
-import IMG_5620 from './Photographs/IMG_5620.jpg'
-import IMG_5633 from './Photographs/IMG_5633.jpg'
-import IMG_5652 from './Photographs/IMG_5652.jpg'
-import IMG_6162 from './Photographs/IMG_6162.jpg'
+import IMG_4946 from './photographs/IMG_4946.jpg'
+import IMG_5066 from './photographs/IMG_5066.jpg'
+import IMG_5084 from './photographs/IMG_5084.jpg'
+import IMG_5118 from './photographs/IMG_5118.jpg'
+import IMG_5227 from './photographs/IMG_5227.jpg'
+import IMG_5256 from './photographs/IMG_5256.jpg'
+import IMG_5583 from './photographs/IMG_5583.jpg'
+import IMG_5584 from './photographs/IMG_5584.jpg'
+import IMG_5620 from './photographs/IMG_5620.jpg'
+import IMG_5633 from './photographs/IMG_5633.jpg'
+import IMG_5652 from './photographs/IMG_5652.jpg'
+import IMG_6162 from './photographs/IMG_6162.jpg'
 
 
 export default function WovenImageList() {
