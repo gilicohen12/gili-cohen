@@ -227,6 +227,9 @@ transform: translateY(20%);
   display: flex;
   flex-wrap: wrap;
   padding: 70px 30px;
+  margin: 10px;
+  justify-content: space-around; /* Distribute items evenly with equal space around them */
+  align-items: center; /* Center items vertically */
 }
 
 .contact-body {
