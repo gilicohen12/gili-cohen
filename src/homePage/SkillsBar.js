@@ -1,16 +1,16 @@
 import React from 'react';
-import './styles/styles.css';
+import '../styles/styles.css';
 import Tech from './Tech';
-import java from './toolIcons/java.png';
-import figma from './toolIcons/figma.png';
-import latex from './toolIcons/latex.png';
-import git from './toolIcons/git.png';
-import javascript from './toolIcons/javascript.png';
-import nextjs from './toolIcons/nextjs.png';
-import nodejs from './toolIcons/nodejs.png';
-import tailwind from './toolIcons/tailwind.png';
-import python from './toolIcons/python.png';
-import react from './toolIcons/react.png';
+import java from '../toolIcons/java.png';
+import figma from '../toolIcons/figma.png';
+import latex from '../toolIcons/latex.png';
+import git from '../toolIcons/git.png';
+import javascript from '../toolIcons/javascript.png';
+import nextjs from '../toolIcons/nextjs.png';
+import nodejs from '../toolIcons/nodejs.png';
+import tailwind from '../toolIcons/tailwind.png';
+import python from '../toolIcons/python.png';
+import react from '../toolIcons/react.png';
 
 const SkillsBar = () => {
     return (

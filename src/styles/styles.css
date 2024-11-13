@@ -6,10 +6,12 @@
 body {
   margin: 0;
 }
+
 .photo-main {
   display: block;
-     margin-left: auto;
+  margin-left: auto;
 }
+
 .body-text {
   color: var(--gray-600, #4B5563);
   padding: 50px 50px;
@@ -22,15 +24,17 @@ body {
 
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.00);
-  background: var(--gray-default, #FFF);;
+  background: var(--gray-default, #FFF);
 }
 
 .container {
   display: flex;
   padding: 0px 32px;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch; /* Stretch items to match the height of the container */
   flex: 1 0 0;
+  flex-wrap: nowrap; /* Ensure content does not wrap within the container */
+  overflow: hidden; /* Prevent text from leaking outside */
 }
 
 .intro-body {
@@ -57,6 +61,7 @@ nav {
   height: 183px;
   flex-shrink: 0;
 }
+
 .small-header {
   width: 100px;
   height: 70px;
@@ -68,6 +73,7 @@ nav {
   font-weight: 700;
   line-height: 35px; /* 72.917% */
 }
+
 .page {
   padding: 30px 40px;
 }
@@ -88,6 +94,7 @@ nav {
   align-items: center;
   gap: 8px;
 }
+
 .tech-text {
   color: var(--gray-600, #4B5563);
   /* Body1/Normal - Dektop */
@@ -97,6 +104,7 @@ nav {
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
+
 .big-section {
   padding: 72px 0px;
 }
@@ -104,76 +112,88 @@ nav {
 .section {
   padding: 15px 0px;
 }
+
 .small-section {
   padding: 15px 0px;
 }
 
 .wide-rectangle {
   margin-bottom: 35px;
-  padding:15px 20px;
-  width: 1173px;
-  height: 286px;
+  padding: 15px 20px;
+  width: 75vw; /* 75% of the viewport width */
+  height: auto; /* Adjust height automatically */
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid #000;
   background: #FFF;
+  overflow: hidden; /* Prevent text from leaking outside */
 }
 
-.job-header {
-  width: 214px;
-  height: 49px;
+.job-header, .job-title {
+  width: 100%; /* Adjust width to 100% of the parent */
+  height: auto; /* Adjust height automatically */
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 88.889% */
-  
+}
+
+.job-header {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  line-height: 2.5vw; /* Responsive line height based on viewport width */
 }
 
 .job-title {
-  color: #000;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 133.333% */
-  width: 229px;
-height: 70px;
-padding: 10px 0px;
-flex-shrink: 0;
--ms-transform: translateY(50%);
-transform: translateY(50%);
+  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  line-height: 2vw; /* Responsive line height based on viewport width */
+  padding: 10px 0px;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 .job-body {
-  padding: 5px 0px ;
+  width: 100%; /* Adjust width to 100% of the parent */
+  padding: 5px 0px;
   color: #000;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1vw; /* Responsive font size based on viewport width */
   font-style: normal;
   font-weight: 600;
-  line-height: 25px; /* 156.25% */
+  line-height: 1.25vw; /* Responsive line height based on viewport width */
   -ms-transform: translateY(20%);
-transform: translateY(20%);
+  transform: translateY(20%);
 }
-
 
 .left-column {
-  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%; /* 35% of the container width */
   padding-right: 10px;
-  
 }
 
-.container {
-  display: flex; 
-  flex-direction: row;
+.right-column {
+  width: 75%; /* 65% of the container width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-column ul {
+  height: 200%; /* Ensure ul takes the full height of the right column */
+  padding-bottom: calc(2 * 1vw); 
+}
+
+.right-column li {
+  height: 40%; /* Each job-body takes half the height of the right column */
 }
 
 .jobs {
   padding: 50px 65px;
 }
+
 .others {
   display: flex;
 }
@@ -194,23 +214,23 @@ transform: translateY(20%);
   text-decoration: none;
 }
 
-
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
+
 .row2 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
   width: 100%;
 }
+
 .intro-spacing {
   display: flex;
   padding-right: 10px;
 }
-
 
 /* Create two equal columns that sits next to each other */
 .column {
@@ -243,6 +263,7 @@ transform: translateY(20%);
   font-weight: 700;
   line-height: 32px; /* 133.333% */
 }
+
 .contact-info {
   color: #000;
   font-family: Inter;

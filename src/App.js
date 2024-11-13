@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';  
-import Exploratory from './ExploratoryPieces';
+import Exploratory from './projects/ExploratoryPieces';
 import Photography from './Photography';
-import Home from './Home';
-import Experience from './Experience';
+import Home from './homePage/Home';
+import ExperienceTimeline from './homePage/ExperienceTimeline';
 import Contact from './Contact';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <NavBar />
         <Routes> {/* Wrap your Routes in a Routes component */}
           <Route path="/" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/experience" element={<ExperienceTimeline />} />
           <Route path="/exploratory" element={<Exploratory />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />

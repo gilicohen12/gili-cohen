@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import './styles/styles.css';
-import home_page_photo2 from './photographs/home_page_photo2.png';
+import '../styles/styles.css';
+import home_page_photo2 from '../photographs/home_page_photo2.png';
 import SkillsBar from './SkillsBar';
-import Experience from './Experience';
-import Footer from './Footer';
+import ExperienceTimeline from './ExperienceTimeline';
+import Footer from '../Footer';
 
 const Home = () => {
 
@@ -49,7 +49,7 @@ const Home = () => {
             
             </div>
             <SkillsBar />
-            <div id='experience'><Experience/></div>
+            <div id='experience'><ExperienceTimeline/></div>
             <div className='others'>
                 <div className='box'>
                     <div className= 'small-header'> Exploratory Pieces</div>

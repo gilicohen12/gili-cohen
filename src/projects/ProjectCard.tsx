@@ -4,18 +4,26 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, TextField } from "@mui/material"
+import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, TextField, DialogActions } from "@mui/material"
 
 interface ProjectCardProps {
   projectTitle: string;
   projectSummary: string;
+  projectCodeURL: string;
 }
 
-export default function ProjectCard({ projectTitle, projectSummary }: ProjectCardProps) {
+export default function ProjectCard({ projectTitle, projectSummary, projectCodeURL }: ProjectCardProps) {
   const [popout, setPopOut] = React.useState(false);
+  const handleClickOpen = () => {
+    setPopOut(true);
+  };
+
+  const handleClose = () => {
+    setPopOut(false);
+  };
   return (
     <div>
-      <Card sx={{ width: 345}}>
+      <Card sx={{ width: 345 }}>
         <CardMedia
           sx={{ height: 140 }}
           image="/static/images/cards/contemplative-reptile.jpg"
@@ -30,31 +38,31 @@ export default function ProjectCard({ projectTitle, projectSummary }: ProjectCar
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onChange={e => setPopOut(true)}>Learn More</Button>
+          <Button size="small" onClick={handleClickOpen}>Learn More</Button>
         </CardActions>
       </Card>
 
       <Dialog
         open={popout}
-        onClose={e => setPopOut(false)}
+        onClose={handleClose}
         maxWidth='sm'
         fullWidth={true}
       >
-        <DialogTitle>Add New Account File</DialogTitle>
+        <DialogTitle>{projectTitle}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Fill in account code and upload new file to view it's data
+
           </DialogContentText>
-
-          <TextField size="small" label="Enter Account Code" sx={{ marginTop: '10px' }} fullWidth />
-          <div>
-
-          </div>
-          <div className="center-div" style={{ marginTop: '10px' }}>
-          </div>
         </DialogContent>
+        <DialogActions>
+          {projectCodeURL &&
+            <Button onClick={() => window.open(projectCodeURL, '_blank')} color="primary" autoFocus> View Code </Button>}
+          <Button onClick={handleClose} color="primary" autoFocus> Close </Button>
+        </DialogActions>
       </Dialog>
 
     </div>
   );
 }
+
+{/* <video className="border border-black" autoPlay muted loop playsInline poster="./webdevthumb.png" data-astro-transition-persist="astro-vhgsmhyf-1"> <source src="./webdevelopment.mp4" type="video/mp4"/> </video> */ }
