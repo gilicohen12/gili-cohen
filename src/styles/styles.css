@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 .photo-main {
@@ -18,7 +19,7 @@ body {
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 50;
   line-height: 24px; /* 150% */
 }
 
@@ -34,7 +35,7 @@ nav {
   align-items: stretch; /* Stretch items to match the height of the container */
   flex: 1 0 0;
   flex-wrap: nowrap; /* Ensure content does not wrap within the container */
-  overflow: hidden; /* Prevent text from leaking outside */
+  overflow: visible; /* Ensure content is not cropped */
 }
 
 .intro-body {
@@ -43,13 +44,13 @@ nav {
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300; /* Adjusted font-weight for less bold appearance */
   line-height: 24px; /* 150% */
   width: 750px;
 }
 
 .big-header {
-  padding: 30px 0px;
+  margin-bottom: 45px;
   color: #000;
   font-family: Inter;
   font-size: 128px;
@@ -124,30 +125,34 @@ nav {
   height: auto; /* Adjust height automatically */
   flex-shrink: 0;
   border-radius: 30px;
-  border: 1px solid #000;
-  background: #FFF;
+  
+  border: 1px solid #FFF; /* Set border color to white */
+  background: #111111; /* Set background color to black */
   overflow: hidden; /* Prevent text from leaking outside */
+  color: #FFF; /* Set text color to white */
 }
 
 .job-header, .job-title {
   width: 100%; /* Adjust width to 100% of the parent */
   height: auto; /* Adjust height automatically */
   flex-shrink: 0;
-  color: #000;
-  font-family: Inter;
+  color: #FFF; /* Set text color to white */
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
 .job-header {
-  font-size: 2vw; /* Responsive font size based on viewport width */
+  font-size: 1.8vw; /* Responsive font size based on viewport width */
   line-height: 2.5vw; /* Responsive line height based on viewport width */
+  padding: 10px 0px 0px 0px;
 }
 
 .job-title {
-  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  font-size: 1.4vw; /* Responsive font size based on viewport width */
+  font-weight: 400;
   line-height: 2vw; /* Responsive line height based on viewport width */
-  padding: 10px 0px;
+  padding: 0px 0px 90px 0px;
   -ms-transform: translateY(50%);
   transform: translateY(50%);
 }
@@ -155,11 +160,11 @@ nav {
 .job-body {
   width: 100%; /* Adjust width to 100% of the parent */
   padding: 5px 0px;
-  color: #000;
-  font-family: Inter;
+  color: #FFF; /* Set text color to white */
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 1vw; /* Responsive font size based on viewport width */
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.25vw; /* Responsive line height based on viewport width */
   -ms-transform: translateY(20%);
   transform: translateY(20%);
@@ -170,15 +175,18 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 20%; /* 35% of the container width */
+  width: 20%; /* 20% of the container width */
   padding-right: 10px;
+
+  overflow: visible;
 }
 
 .right-column {
-  width: 75%; /* 65% of the container width */
+  width: 75%; /* 75% of the container width */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .right-column ul {
@@ -230,6 +238,7 @@ nav {
 .intro-spacing {
   display: flex;
   padding-right: 10px;
+  flex-direction: column;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -284,4 +293,46 @@ nav {
   padding: 3px;
   text-align: center;
   font-size: 12px;
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 2.5s ease-out; /* Slowed down the transition */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Define the keyframes for the slide-in animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the move-left class */
+.move-left {
+  animation: slideInFromRight 2s ease-out forwards;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
