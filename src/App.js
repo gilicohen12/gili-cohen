@@ -14,7 +14,7 @@ const App = () => {
       <div>
         <NavBar />
         <Routes> {/* Wrap your Routes in a Routes component */}
-          <Route path="/" element={<Home />} />
+          <Route path="/gili-cohen/" element={<Home />} />
           <Route path="/experience" element={<ExperienceTimeline />} />
           <Route path="/exploratory" element={<Exploratory />} />
           <Route path="/photography" element={<Photography />} />
