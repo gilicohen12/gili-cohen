@@ -2,15 +2,14 @@ import React from 'react';
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    // Adjust the path to your PDF file
+    // Adjust the path to your PDF file using PUBLIC_URL
+    const pdfPath = `${process.env.PUBLIC_URL}/GiliCohenResumeF2024.pdf`;
 
     // Create a link element
-    const pdfPath = '/Resume_Gili_Cohen_2023.pdf';
-
     const link = document.createElement('a');
     link.href = pdfPath;
     link.target = '_blank';
-    link.download = 'Resume-Gili-Cohen-2023.pdf'; // Set the desired file name
+    link.download = 'GiliCohenResumeF2024.pdf'; // Set the desired file name
 
     // Dispatch a click event on the link
     document.body.appendChild(link);
