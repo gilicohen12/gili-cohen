@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
@@ -11,20 +11,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import { TextField, DialogActions } from "@mui/material"
+import { DialogActions } from "@mui/material";
 import { grey } from '@mui/material/colors';
 
 
-interface ProjectCardProps {
-  projectTitle: string;
-  projectSummary: string;
-  projectCodeURL: string;
-  fullDetails: string;
-  technology: string[];
-}
-
-export default function ProjectCard({ projectTitle, projectSummary, projectCodeURL, fullDetails, technology }: ProjectCardProps) {
-  const [popout, setPopOut] = React.useState(false);
+export default function ProjectCard({ projectTitle, projectSummary, projectCodeURL, fullDetails, technology, image }) {
+  const [popout, setPopOut] = useState(false);
   const handleClickOpen = () => {
     setPopOut(true);
   };
@@ -38,15 +30,17 @@ export default function ProjectCard({ projectTitle, projectSummary, projectCodeU
       <Card sx={{ width: 345, height: 420, backgroundColor: 'black', color: 'white', borderRadius: 4 }}>
         <CardMedia
           sx={{ height: 140, borderRadius: '4px 4px 0 0' }}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="green iguana"
+          component="img"
+          alt={projectTitle}
+          height="300"
+          image= {image}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {projectTitle}
           </Typography>
           <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', marginBottom: 2, gap: '5px', alignItems: "left"}}>
-            {technology.map((tech: string, index: number) => (
+            {technology.map((tech, index) => (
               <Chip key={index} label={tech.trim()} sx={{ backgroundColor: 'white', color: 'black', marginTop: "10px"}} />
             ))}
           </Stack>
@@ -78,7 +72,7 @@ export default function ProjectCard({ projectTitle, projectSummary, projectCodeU
         <DialogTitle sx={{ fontSize: '1.5rem', color: 'black' }}>{projectTitle}</DialogTitle>
         <DialogContent>
             <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', marginBottom: 2, gap: '10px' }}>
-            {technology.map((tech: string, index: number) => (
+            {technology.map((tech, index) => (
               <Chip key={index} label={tech.trim()} sx={{ backgroundColor: 'black', color: 'white' }} />
             ))}
             </Stack>

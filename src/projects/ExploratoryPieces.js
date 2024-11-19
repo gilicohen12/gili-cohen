@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/styles.css';
 import Footer from '../Footer';
 import ProjectCard from './ProjectCard';
+import battleshipImage from '../photographs/battleship.png';
+import webcrawlerImage from '../photographs/webcrawler.png';
+import synthImage from '../photographs/synth.png';
 
 const ExploratoryPieces = () => {
   return (
@@ -16,17 +19,20 @@ const ExploratoryPieces = () => {
             projectCodeURL='https://github.com/gilicohen12/web-crawler'
             technology={['Python', 'HTML Parsing', 'Socket Connections', 'Web Scraping']}
             fullDetails='Created a social media web crawler and scraper that can gather and process large amounts of data from a desired website. Designed a parser to process webpage data and allow the web crawler to not resist previously visited websites'
+            image = {webcrawlerImage}
           />
           <ProjectCard
             projectTitle='Battleship AI Bot'
             projectSummary="Command-line Battleship game with socket connections for seamless multiplayer interactions."
             projectCodeURL='https://github.com/gilicohen12/battleship-ai-bot'
             technology={['Java', 'MVC Architecture', 'Socket Connections', 'Desktop Application']}
+            image = {battleshipImage}
           />
           <ProjectCard
             projectTitle='Synth'
             projectSummary='An AI-driven code autocompletion research project using Python and OpenAI API. Worked alongside Northeastern Professor to develop better design thinking skills for CS students through app utilization.'
             technology={['Python', 'OpenAI API']}
+            image = {synthImage}
           />
         </div>
       </div>
