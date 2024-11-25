@@ -53,7 +53,10 @@ const Home = () => {
                   loop: true,
                 }} />
              </div>
-            <div className="intro-body"> Welcome to my digital space, where technology meets creativity. I am a <b>computer science</b> and <b>design</b> enthusiast, driven by a passion for both meticulous details and the expansive landscapes within the digital realm. As a dedicated student, my passion lies at the intersection of <b>front and back-end development</b>, with a particular interest in the vast possibilities of <b>AI</b>. I am captivated not only by the technical intricacies of AI development but also by its profound and lasting impact on <b>computer science education</b>. As a <b>leader</b> at heart, I approach challenges with a blend of technical expertise and a deep appreciation for <b>creativity</b>, finding the balance between meticulous detail and zoomed out perspectives. Beyond the lines of code, I find inspiration in the art of <b>photography</b>, the serenity of <b>yoga</b>, and the exploration of new horizons through <b>travel</b>.</div>
+            <div className="intro-body"> 
+            Welcome to my space! I’m a <b>computer science student</b> with a combined major in <b>interaction design</b>, driven by a passion for creating seamless connections between technology and people. I thrive on tackling challenges in both <b>front-end and back-end development</b>, with a growing fascination for <b>AI</b> and its potential to revolutionize computer science education. Blending <b>technical expertise</b> with <b>creative thinking</b>, I aim to build solutions that make a lasting impact. Beyond the screen, I find inspiration through photography, yoga, and exploring new cultures and places.
+
+            </div>
           </div>
           <div className="image-container">
       <img className='move-left' src={home_page_photo2} />

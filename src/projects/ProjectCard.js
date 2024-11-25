@@ -69,7 +69,7 @@ export default function ProjectCard({ projectTitle, projectSummary, projectCodeU
             {projectCodeURL &&
               <Button 
                 onClick={() => window.open(projectCodeURL, '_blank')} 
-                color="info" autoFocus sx={{ backgroundColor: grey[900], color: 'white', '&:hover': { backgroundColor: 'lightgrey' } }}>View Code</Button>}
+                color="info" autoFocus sx={{ backgroundColor: grey[800], color: 'white', '&:hover': { backgroundColor: 'lightgrey' } }}>View Code</Button>}
           </CardActions>
         </Card>
       </div>
