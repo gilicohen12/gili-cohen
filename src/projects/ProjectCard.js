@@ -20,7 +20,7 @@ export default function ProjectCard({ projectTitle, projectSummary, projectCodeU
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div key="front">
-        <Card sx={{ width: 345, height: 420, backgroundColor: 'black', color: 'white', borderRadius: 4}}>
+        <Card sx={{ width: 345, height: 420, backgroundColor: 'black', color: 'white', borderRadius: 4, marginTop: 5}}>
           <div>
             <CardMedia
               sx={{ height: 140, borderRadius: '4px 4px 0 0' }}
@@ -50,7 +50,7 @@ export default function ProjectCard({ projectTitle, projectSummary, projectCodeU
       </div>
 
       <div key="back">
-        <Card sx={{ width: 345, height: 420, backgroundColor: 'black', color: 'white', borderRadius: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <Card sx={{ width: 345, height: 420, backgroundColor: 'black', color: 'white',  marginTop: 5, borderRadius: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <CardContent sx={{ flexGrow: 1, marginTop: 3}}>
             <Typography gutterBottom variant="h5" component="div">
               {projectTitle}

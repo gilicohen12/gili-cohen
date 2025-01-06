@@ -48,7 +48,16 @@ nav {
   line-height: 24px; /* 150% */
   width: 750px;
 }
-
+.welcome {
+  color: var(--gray-600, #4B5563);
+  /* Body2/Normal - All */
+  /* font-family: Inter; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500; /* Adjusted font-weight for less bold appearance */
+  line-height: 54px; /* 150% */
+  width: 750px;
+}
 .big-header {
   margin-bottom: 45px;
   color: #000;
@@ -335,4 +344,68 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.horizontal-scroll-container {
+  position: relative;
+  overflow: visible; /* Prevent vertical and horizontal overflow */
+  height: 100%; /* Full height of the parent container */
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  scroll-snap-type: x mandatory; /* Snap horizontally */
+  height: 100%; /* Match the container's height */
+  align-items: center; /* Vertically center cards */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  padding: 40px 0;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.project-card {
+  scroll-snap-align: center; /* Snap each card to the center */
+  flex-shrink: 0; /* Prevent shrinking of cards */
+  width: 345px; /* Fixed card width */
+  height: 420px; /* Fixed card height */
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  z-index: 10; /* Bring the hovered card to the front */
+}
+
+.nav-button {
+  z-index: 20; /* Ensure arrows are above scaling cards */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

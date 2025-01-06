@@ -3,7 +3,7 @@ import React from 'react';
 const DownloadButton = () => {
   const handleDownload = () => {
     // Adjust the path to your PDF file using PUBLIC_URL
-    const pdfPath = `${process.env.PUBLIC_URL}/GiliCohenResumeF2024.pdf`;
+    const pdfPath = `${process.env.PUBLIC_URL}/GiliCohenResumeS25.pdf`;
 
     // Create a link element
     const link = document.createElement('a');
@@ -21,7 +21,7 @@ const DownloadButton = () => {
 
   return (
     <button className="download-button" onClick={handleDownload}>
-      Download Resume
+      <b>Download Resume</b>
     </button>
   );
 };
