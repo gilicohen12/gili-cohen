@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gili-cohen/static/css/main.07df3c97.css",
-    "main.js": "/gili-cohen/static/js/main.c3269087.js",
+    "main.js": "/gili-cohen/static/js/main.485a60f9.js",
     "static/js/453.a074a449.chunk.js": "/gili-cohen/static/js/453.a074a449.chunk.js",
     "static/media/IMG_6162.jpg": "/gili-cohen/static/media/IMG_6162.ca6633deae7a3b9381ab.jpg",
     "static/media/IMG_5584.jpg": "/gili-cohen/static/media/IMG_5584.d7a17a940f929f684ffa.jpg",
@@ -15,6 +15,7 @@
     "static/media/IMG_5620.jpg": "/gili-cohen/static/media/IMG_5620.8b6a8492b5223ecea54f.jpg",
     "static/media/IMG_5256.jpg": "/gili-cohen/static/media/IMG_5256.879a47291aa0080dcdfb.jpg",
     "static/media/IMG_5066.jpg": "/gili-cohen/static/media/IMG_5066.ff973d5b6ea44dd987b1.jpg",
+    "static/media/articleImage.png": "/gili-cohen/static/media/articleImage.f38f9dda8d6c20646253.png",
     "static/media/webcrawler.png": "/gili-cohen/static/media/webcrawler.85f6d7bcb5b2550134e1.png",
     "static/media/FlowIt.png": "/gili-cohen/static/media/FlowIt.ff4fce44be277fd2aedc.png",
     "static/media/battleship.jpeg": "/gili-cohen/static/media/battleship.d7ae76d796f49c29d2f9.jpeg",
@@ -23,11 +24,11 @@
     "static/media/synth.jpeg": "/gili-cohen/static/media/synth.28a8798014847c6d01a8.jpeg",
     "index.html": "/gili-cohen/index.html",
     "main.07df3c97.css.map": "/gili-cohen/static/css/main.07df3c97.css.map",
-    "main.c3269087.js.map": "/gili-cohen/static/js/main.c3269087.js.map",
+    "main.485a60f9.js.map": "/gili-cohen/static/js/main.485a60f9.js.map",
     "453.a074a449.chunk.js.map": "/gili-cohen/static/js/453.a074a449.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07df3c97.css",
-    "static/js/main.c3269087.js"
+    "static/js/main.485a60f9.js"
   ]
 }
