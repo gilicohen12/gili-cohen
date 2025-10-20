@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gili-cohen/static/css/main.07df3c97.css",
-    "main.js": "/gili-cohen/static/js/main.485a60f9.js",
+    "main.js": "/gili-cohen/static/js/main.c7529ce3.js",
     "static/js/453.a074a449.chunk.js": "/gili-cohen/static/js/453.a074a449.chunk.js",
     "static/media/IMG_6162.jpg": "/gili-cohen/static/media/IMG_6162.ca6633deae7a3b9381ab.jpg",
     "static/media/IMG_5584.jpg": "/gili-cohen/static/media/IMG_5584.d7a17a940f929f684ffa.jpg",
@@ -24,11 +24,11 @@
     "static/media/synth.jpeg": "/gili-cohen/static/media/synth.28a8798014847c6d01a8.jpeg",
     "index.html": "/gili-cohen/index.html",
     "main.07df3c97.css.map": "/gili-cohen/static/css/main.07df3c97.css.map",
-    "main.485a60f9.js.map": "/gili-cohen/static/js/main.485a60f9.js.map",
+    "main.c7529ce3.js.map": "/gili-cohen/static/js/main.c7529ce3.js.map",
     "453.a074a449.chunk.js.map": "/gili-cohen/static/js/453.a074a449.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07df3c97.css",
-    "static/js/main.485a60f9.js"
+    "static/js/main.c7529ce3.js"
   ]
 }
